@@ -1,0 +1,62 @@
+.homeBaseContainer{
+    margin:5rem 0;
+    background-color: #F8F7FF;
+    padding-bottom:8rem;
+}
+
+.homeBaseContainer .homeJumbotron {
+    background-image: url('../../../assets/images/Pattern.svg');
+    background-size: cover;
+    padding:2.5rem 0 1.5rem 0;
+}
+
+.homeBaseContainer .headingWrapper{
+    max-width: 900px;
+    margin:0 auto;
+}
+
+.headingWrapper h1{
+    color:#5E56E7;
+    font-size:48px;
+}
+
+.homeJumbotron p {
+    color: #333;
+    line-height: 1.6;
+}
+
+.homePageContent{
+    display:flex;
+    margin:0 auto;
+    flex-wrap: wrap;
+    max-width:900px;
+    justify-content:space-between;
+    margin-top:2rem;
+}
+
+.col-6{
+    width:46%;
+}
+
+/* =========== For tablet screen ======== */
+@media(max-width:800px){
+    .homeBaseContainer{
+        padding:0 1rem 8rem 1rem;
+    }
+}
+
+/* ======== mobile screen ================ */
+@media(max-width:567px){
+    .homeBaseContainer{
+        padding:0 1rem 4rem 1rem;
+        margin:0;
+    }
+
+    .homePageContent{
+        flex-direction: column;
+        margin-top:0.85rem;
+    }
+    .col-6{
+        width:100%;
+    }
+}

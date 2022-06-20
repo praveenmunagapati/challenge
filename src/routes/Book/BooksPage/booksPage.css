@@ -1,0 +1,151 @@
+.BooksContainer {
+    margin: 5rem auto;
+    width:100%;
+}
+
+.BooksContainer .head {
+    display: flex;
+    gap: 0.5rem;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.booksHeading {
+    max-width: 900px;
+    margin:0 auto;
+}
+
+.booksHeading .headingText {
+    color: #5E56E7;
+    font-size: 30px;
+}
+
+.BooksContainer .search-input {
+    width: 93%;
+    position: relative;
+}
+
+.inputTextArea{
+    width: 100%;
+    padding: 0 10px 0 1.75rem;
+    height: 40px;
+    background-color: #F0F0F6;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    color:#333333;
+    font-weight:600;
+}
+
+.inputTextArea:focus{
+    outline:1px solid #5E56E7;
+}
+
+.inputTextArea:focus::placeholder{
+    color:transparent;
+}
+
+.inputTextArea::placeholder{
+    font-weight: 600;
+    color:#A0A0A0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.searchIcon {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cancleIcon{
+    position: absolute;
+    display:none;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cancleIcon.active{
+    display:block;
+}
+
+
+.loadingAnimation{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+
+.noResultContainer{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#F8F7FF ;
+}
+
+.noResultContainer h3{
+    font-size:20px;
+}
+
+.bookCardWrapper{
+    max-width: 900px;
+    margin:0 auto;
+    display:flex;
+    flex-wrap: wrap;
+    gap:1rem;
+}
+
+.pageBody{
+    background-color: #F8F7FF;
+    margin-top:1rem;
+    padding:3rem 0;
+}
+
+.felxCol-2{
+    width:15%;
+}
+
+/* =========== For tablet screen ======== */
+@media(max-width:800px){
+    .booksHeading {
+        padding:0rem 2rem;
+    }
+
+    .pageBody{
+        padding:3rem 2rem;
+    }
+
+    .felxCol-2{
+        width:23%;
+    }
+}
+
+
+/* ======== mobile screen ================ */
+@media(max-width:567px){
+    .BooksContainer {
+        margin: 0rem auto;
+        width:98%;
+        overflow: hidden;
+    }
+
+    .booksHeading {
+        padding:0rem 0.5rem;
+    }
+
+    .pageBody{
+        padding:3rem 0.5rem;
+    }
+
+    .felxCol-2{
+        width:30%;
+    }
+
+    .BooksContainer .search-input {
+        width: 90%;
+    }
+}

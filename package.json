@@ -1,32 +1,40 @@
 {
-  "name": "client",
+  "name": "book_app_ts",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "axios": "^0.19.0",
-    "bootstrap": "^4.4.1",
-    "flow-bin": "^0.114.0",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.0.1",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.4.1",
+    "@types/node": "^16.11.27",
+    "@types/react": "^18.0.5",
+    "@types/react-dom": "^18.0.0",
+    "axios": "^0.26.1",
+    "flow-bin": "^0.176.1",
     "lodash.debounce": "^4.0.8",
-    "node-sass": "^4.13.0",
-    "react": "^16.12.0",
-    "react-bootstrap": "^1.0.0-beta.16",
-    "react-debounce-input": "^3.2.2",
-    "react-dom": "^16.12.0",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "3.3.0"
+    "react": "^18.0.0",
+    "react-debounce-input": "^3.2.5",
+    "react-dom": "^18.0.0",
+    "react-loading-spin": "^2.1.9",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.6.3",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "flow": "flow"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [
@@ -41,7 +49,7 @@
     ]
   },
   "devDependencies": {
-    "eslint-plugin-jsx-a11y": "^6.2.3"
-  },
-  "proxy": "http://localhost:4000"
+    "@types/lodash": "^4.14.181",
+    "@types/lodash.debounce": "^4.0.6"
+  }
 }
